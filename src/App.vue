@@ -1,3 +1,13 @@
+<script setup lang="ts">
+import Amount from "@components/ui/Amount.vue";
+import { ref } from "vue";
+
+const amount = ref(0);
+</script>
+
 <template>
-  <h1 class="text-3xl font-bold underline">Currency Exchange Rate App</h1>
+  <h2>
+    {{ amount }}
+  </h2>
+  <Amount v-model:amount="amount" />
 </template>
