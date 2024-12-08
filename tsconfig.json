@@ -6,7 +6,7 @@
       "@/*": ["src/*"],
       "@components/*": ["src/components/*"],
       "@assets/*": ["src/assets/*"]
-    },
+    }
   },
   "include": ["src"],
 
@@ -14,5 +14,5 @@
   "references": [
     { "path": "./tsconfig.app.json" },
     { "path": "./tsconfig.node.json" }
-  ],
+  ]
 }

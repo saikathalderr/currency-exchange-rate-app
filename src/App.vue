@@ -1,3 +1,1 @@
-<template>
-  Currency Exchange Rate App
-</template>
+<template>Currency Exchange Rate App</template>
