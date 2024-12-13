@@ -1,10 +1,12 @@
 <script setup lang="ts">
-import { ref } from "vue";
-import CurrencySearch from "@components/ui/CurrencySearch.vue";
-
-const searchText = ref("");
+import Currency from "@components/ui/Currency.vue";
+import currencies from "@datasets/currencies";
 </script>
 
 <template>
-  <CurrencySearch v-model:search="searchText" />
+  <Currency
+    v-for="currency in currencies"
+    :key="currency.code"
+    :currency="currency"
+  />
 </template>
